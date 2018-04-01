@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <title>Главная</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Bilbo|Cormorant+Garamond&amp;subset=cyrillic" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js"></script>
-    <script type="text/javascript" src="js/jquery.fullpage.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <link rel="stylesheet" href="font/css/fontawesome-all.min.css">
+
 </head>
 <body>
 
@@ -22,21 +20,18 @@
         <li class="header__language-en"><a href="#">EN</a></li>
     </ul>
    <div class="menu">
-       <input class="menu-burger_checkbox" type="checkbox" id="burger">
-       <label class="nav-burger" for="burger"></label>
-       <span class="burger"></span>
-       <input type="checkbox" id="sub_nav-checkbox">
-       <label  class="subnav_button" for="sub_nav-checkbox"></label>
-       <span class="arrow"></span>
+       <div class="burger-trigger"><span class="burger"></span></div>
+
+
        <ul class="nav">
-           <li class="nav_item-2"><a href="#">КАТАЛОГ</a></li>
+           <li class="nav_item-2">КАТАЛОГ<div class="button-into-nav"><span class="arrow"></span></div></li>
            <li class="nav_item-1"><a href="about.html"> ОБО МНЕ</a></li>
            <li class="nav_item-3"><a href="info-for-orders.html">УСЛОВИЯ ЗАКАЗА</a></li>
            <li class="nav_item-4"><a href="contacts.html">КОНТАКТЫ</a></li>
         </ul>
 
        <ul class="nav_subnav">
-           <li class="subnav_item-1"><a href="#">КАТАЛОГ</a></li>
+           <li class="subnav_item-1"><div class="button-into-nav"><span class="arrow"></span></div>КАТАЛОГ</li>
            <li class="subnav_item-2"><a href="catalog/crowns.html">КОРОНЫ</a></li>
            <li class="subnav_item-3"><a href="catalog/brooches.html">БРОШИ</a></li>
            <li class="subnav_item-4"><a href="catalog/cat-ears.html">ОБОДКИ CAT-EARS</a></li>
@@ -46,14 +41,13 @@
    </div>
 </header>
 <div id="fullpage">
-
-    <div class="section" id="section0">
+    <div class="section">
         <div class="main-content"><img src="main-header.png" class="main-header">
         <p class="main-text">Уникальные украшения и аксессуары</p></div>
-        <a class="button-down-main" href="#section1"><i class="fas fa-chevron-circle-down"></i></a>
+        <div class="button-down button-down-main"  id="move-to-crowns-down"><i class="fas fa-chevron-circle-down"></i></div>
     </div>
 
-    <div class="section" id="section1">
+    <div class="section" >
        <div  class="container_wrapper">
            <div class="container">
                <div class="container-left">
@@ -64,13 +58,13 @@
                </div>
                <div class="container-right"><a class="photo-five box__animation" href="catalog/crowns.html" ><img src="photo-gallery/crouns_(4).jpg"></a></div>
            </div>
-        <a class="button-down " href="#section2">Hoops <i class="fas fa-angle-down"></i></a>
+        <div class="button-down" id="move-to-hoops-down">Hoops <i class="fas fa-angle-down"></i></div>
        </div>
     </div >
 
-    <div class="section" id="section2">
+    <div class="section" >
         <div class="container_wrapper">
-            <a class="button-up" href="#section1">Crowns <i class="fas fa-angle-up"></i></a>
+            <div class="button-up" id="move-to-crowns-up" >Crowns <i class="fas fa-angle-up"></i></div>
             <div class="container">
                 <div class="container-left">
                     <a class="photo-one box__animation" href="catalog/crowns.html" ><img src="photo-gallery/hoops_(1).jpg"></a>
@@ -80,13 +74,13 @@
                 </div>
                 <div class="container-right"><a class="photo-five box__animation" href="catalog/crowns.html" ><img src="photo-gallery/hoops_(4).jpg"></a></div>
             </div>
-        <a class="button-down" href="#section3">Brooches <i class="fas fa-angle-down"></i></a>
+        <div class="button-down" id="move-to-brooches-down">Brooches <i class="fas fa-angle-down"></i></div>
         </div>
     </div>
 
-    <div class="section" id="section3">
+    <div class="section" >
         <div class="container_wrapper">
-            <a class="button-up" href="#section2">Hoops <i class="fas fa-angle-up"></i></a>
+            <div class="button-up" id="move-to-hoops-up">Hoops <i class="fas fa-angle-up"></i></div>
             <div class="container">
                 <div class="container-left">
                     <a class="photo-one box__animation" href="catalog/crowns.html" ><img src="photo-gallery/broche_(1).jpg"></a>
@@ -96,11 +90,11 @@
                 </div>
                 <div class="container-right"><a class="photo-five box__animation" href="catalog/crowns.html" ><img src="photo-gallery/broche_(2).jpg"></a></div>
             </div>
-        <a  class="button-down" href="#section4">Tassels <i class="fas fa-angle-down"></i></a>
+        <div  class="button-down" id="move-to-tassels-down">Tassels <i class="fas fa-angle-down"></i></div>
         </div>
     </div>
 
-    <div class="section" id="section4">
+    <div class="section" >
         <div class="container_wrapper">
             <div class="container">
                 <div class="container-left">
@@ -111,7 +105,7 @@
                 </div>
                 <div class="container-right"><a class="photo-five box__animation" href="catalog/crowns.html" ><img src="photo-gallery/tassels_(3).jpg"></a></div>
             </div>
-        <a class="button-up" href="#section0">Наверх <i class="fas fa-angle-up"></i></a>
+        <div class="button-up" id="move-to-top">Наверх <i class="fas fa-angle-up"></i></div>
 
         <footer>
             <div class="contact">
@@ -132,10 +126,6 @@
     </div>
 </div>
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#fullpage').fullpage();
-    });
-</script>
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,13 @@
+$(document).click(function(event) {
+    if ($(event.target).closest('.burger-trigger').length ) return;
+    $('.menu').removeClass('nav_opened','subnav_opened');
+    event.stopPropagation();
+});
+
+$(function () {
+    $('.arrow').click(function () {
+        $('.menu').toggleClass('nav_opened').addClass('subnav_opened');
+    })
+})
+
+
