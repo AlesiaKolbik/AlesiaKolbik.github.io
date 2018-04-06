@@ -1,0 +1,33 @@
+.section:last-child footer{
+    bottom: 0;
+}
+.section .button-up{
+    bottom: auto;
+    top:120px;
+}
+
+.section:last-child .button-up{
+    top:auto;
+    bottom: 12%;
+}
+
+.container_wrapper{
+    text-align: right;
+
+}
+
+footer{
+    position: absolute;
+    bottom: auto;
+}
+
+<script src="js/fullpage.js"></script>
+responsiveWidth: 1024
+class="fp-responsive"
+
+    .content-about div {
+        display: inline-block;
+        width: 400px;
+        margin: 20px;
+        overflow: hidden;
+    }
