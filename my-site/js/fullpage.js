@@ -3,7 +3,7 @@
      $(document).ready(function() {
          $('#fullpage').fullpage({
              anchors: ['#section0', '#section1', '#section2', '#section3', '#section4'],
-             responsiveWidth: 1366
+             responsiveWidth: 1337
          });
          $.fn.fullpage.setScrollingSpeed(1000);
 

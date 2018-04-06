@@ -31,3 +31,46 @@ class="fp-responsive"
         margin: 20px;
         overflow: hidden;
     }
+
+
+
+
+$(document).ready(function () {
+    $('.next').click(function () {
+        var activeImage = $('.img.active');
+        var activeImageIndex = $('.img.active').index();
+        var nextImageIndex = activeImageIndex + 1;
+        var nextImage = $('.img').eq(nextImageIndex);
+        activeImage.removeClass('active');
+
+        if(nextImageIndex == ($('.img:last').index() + 1)){
+            $('.img').eq(0).addClass('active');
+        }
+        else{
+            nextImage.addClass('active');
+        }
+    })
+});
+$(document).ready(function () {
+    $('.prev').click(function () {
+        var activeImage = $('.img.active');
+        var activeImageIndex = $('.img.active').index();
+        var prevImageIndex = activeImageIndex - 1;
+        var prevImage = $('.img').eq(prevImageIndex);
+
+        activeImage.removeClass('active');
+        prevImage.addClass('active');
+    })
+});
+
+$('.prev').click(function(){
+    var pictureSet = $('.picture-set');
+    var left = 0;
+    if(left >= -1200){
+        left = left - 300;
+        pictureSet.css('left',left + "px");
+    }
+    else{
+        pictureSet.css('left','0');
+    }
+});

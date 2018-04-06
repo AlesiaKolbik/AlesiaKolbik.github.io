@@ -71,47 +71,23 @@ $('.button-in-goods').click(function () {
 });
 /* форма в товарах*/
 
-$(document).ready(function () {
-    $('.next').click(function () {
-        var activeImage = $('.img.active');
-        var activeImageIndex = $('.img.active').index();
-        var nextImageIndex = activeImageIndex + 1;
-        var nextImage = $('.img').eq(nextImageIndex);
-        activeImage.fadeOut(500);
-        activeImage.removeClass('active');
 
-        if(nextImageIndex == ($('.img:last').index() + 1)){
-            $('.img').eq(0).fadeIn(500);
-            $('.img').eq(0).addClass('active');
-        }
-        else{
-            nextImage.fadeIn(500);
-            nextImage.addClass('active');
-        }
-    })
-});
-$(document).ready(function () {
-    $('.prev').click(function () {
-        var activeImage = $('.img.active');
-        var activeImageIndex = $('.img.active').index();
-        var prevImageIndex = activeImageIndex - 1;
-        var prevImage = $('.img').eq(prevImageIndex);
 
-        activeImage.fadeOut(500);
-        activeImage.removeClass('active');
-        prevImage.fadeIn(500);
-        prevImage.addClass('active');
-    })
-});
 /*кнопки в слайдере*/
 
 $('.img').click(function () {
-    $('.content-goods-left-slider').addClass('fullpage');
-    $('.button-close-fullpage').addClass('visible')
-});
-$('.button-close-fullpage').click(function () {
-    $('.content-goods-left-slider').removeClass('fullpage');
-    $('.button-close-fullpage').removeClass('visible')
+    if ($(window).width() >= '767'){
+        $('.fullpage').removeClass('hidden');
+        $('.button-close-fullpage').addClass('visible');
+
+    }
+
 });
 
-/*закрывает слайдер fullpage если нажать где-то вне фотографии*/
+$('.button-close-fullpage').click(function () {
+    $('.fullpage').addClass('hidden');
+    $('.button-close-fullpage').removeClass('visible')
+
+});
+
+/*закрывает слайдер fullpage кликом на крестик*/
