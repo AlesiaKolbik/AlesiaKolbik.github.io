@@ -27,8 +27,8 @@
       <file leaf-file-name="info-for-orders.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/info-for-orders.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" column="9" lean-forward="false" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+            <state relative-caret-position="561">
+              <caret line="42" column="43" lean-forward="false" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -47,7 +47,7 @@
       <file leaf-file-name="tassels.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tassels.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
+            <state relative-caret-position="561">
               <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
               <folding />
             </state>
@@ -66,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fullpage.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fullpage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/fullpage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            <state relative-caret-position="85">
+              <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -86,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="1314" column="40" lean-forward="false" selection-start-line="1314" selection-start-column="40" selection-end-line="1314" selection-end-column="40" />
+            <state relative-caret-position="760">
+              <caret line="1280" column="19" lean-forward="false" selection-start-line="1280" selection-start-column="19" selection-end-line="1280" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -145,7 +145,6 @@
         <option value="$PROJECT_DIR$/catalog/tassels.html" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/404.html" />
-        <option value="$PROJECT_DIR$/js/fullpage.js" />
         <option value="$PROJECT_DIR$/main-page.html" />
         <option value="$PROJECT_DIR$/main-page.html" />
         <option value="$PROJECT_DIR$/goods-1.html" />
@@ -155,6 +154,7 @@
         <option value="$PROJECT_DIR$/text" />
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/js/fullpage.js" />
       </list>
     </option>
   </component>
@@ -320,12 +320,12 @@
       <workItem from="1522752271261" duration="14685000" />
       <workItem from="1522826507372" duration="33061000" />
       <workItem from="1522925924106" duration="33319000" />
-      <workItem from="1522994965962" duration="9696000" />
+      <workItem from="1522994965962" duration="10385000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="332143000" />
+    <option name="totallyTimeSpent" value="332832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -539,14 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/fullpage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/goods-1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
@@ -555,25 +547,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/info-for-orders.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="9" lean-forward="false" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contacts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="505">
-          <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tassels.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
           <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
           <folding />
         </state>
@@ -605,10 +581,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/info-for-orders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="42" column="43" lean-forward="false" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="1314" column="40" lean-forward="false" selection-start-line="1314" selection-start-column="40" selection-end-line="1314" selection-end-column="40" />
+        <state relative-caret-position="760">
+          <caret line="1280" column="19" lean-forward="false" selection-start-line="1280" selection-start-column="19" selection-end-line="1280" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tassels.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/fullpage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
           <folding />
         </state>
       </provider>
