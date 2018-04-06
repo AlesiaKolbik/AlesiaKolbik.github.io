@@ -24,7 +24,7 @@ a{
 }
 html,body{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
                   /*header*/
@@ -149,6 +149,7 @@ header p{
     height: 100vh;
     overflow: hidden;
     position: absolute;
+    font-family: 'Cormorant Garamond', serif;
     top:0;
     right: 0;
     z-index: 101;
@@ -203,7 +204,7 @@ header p{
     height: 100%;
 }
 
-/*класс который описывает открытое меню*/
+/*класс, который описывает открытое меню*/
 .nav_opened .nav{
     width: 30%;
 }
@@ -223,7 +224,7 @@ header p{
 .nav_opened .arrow {
     opacity: 1;
 }
-/*класс который описывает открытое подменю*/
+/*класс, который описывает открытое подменю*/
 
 
 .subnav_opened .nav{
@@ -293,23 +294,25 @@ footer div{
 
 .section{
     display: flex;
+    height: 100vh;
     justify-content: center;
     align-content: center;
     align-items: center;
 }
-.section:last-child .container_wrapper {
+
+#sec4 .container_wrapper{
     height: 100%;
     justify-content: flex-end;
-
 }
-.section:last-child footer{
+#sec4 footer{
     margin-top: 100px;
 }
 
-.section:first-child{
+#sec0{
     background: url("../img/main-page-gallery/main-background.JPG");
     background-size: cover;
     position: relative;
+    height: 100vh;
 
 }
 .main-content, .container_wrapper{
@@ -327,16 +330,17 @@ footer div{
 
 }
 .main-content img{
-    max-width: 100%;
+    width: 700px;
+    border-bottom: dashed white 1px;
+    align-self: center;
 }
 .main-header {
     display: inline-block;
-    border-bottom: dashed white 1px;
     font-size: 2em;
 }
 
 
-.section:first-child .button-down-main{
+#sec0 .button-down-main{
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -849,6 +853,9 @@ footer div{
     font-size: 1.6em;
     padding-top: 20px;
 }
+.goods-name span{
+    font-family: 'Ubuntu', sans-serif
+}
 
 .price {
     padding-top: 10px;
@@ -910,10 +917,9 @@ footer div{
     top: 20%;
     left: calc(50% - 400px);
     z-index: 201;
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 30px;
     color: #cdc6c6;
-    text-shadow: 3px 0 2px #1ebfa3;
     border-radius: 10px;
     background: white;
 }
@@ -1096,7 +1102,7 @@ footer div{
 }
 
 
-@media  (min-width:1025px) {
+@media  (min-width:1024px) {
     .box__animation:hover::before {
         background-image: linear-gradient(135deg, rgba(64, 222, 223, .5) 0, rgba(64, 222, 223, .5) 25%, rgba(64, 64, 64, .5) 45%, rgba(64, 64, 64, .5) 100%);
         transform: scale(1.1);
@@ -1152,12 +1158,12 @@ footer div{
         opacity: 1;
     }
 
-    .section:first-child .button-down-main,
+    #sec0 .button-down-main,
     .section .button-down,
-    .button-up:not(#move-to-top) {
+    .button-up:not(.to-top) {
         display: none;
     }
-    #move-to-top{
+    .to-top{
     text-align: center;
         margin-top: 20px;
         margin-right: 0;
@@ -1181,27 +1187,15 @@ footer div{
     }
 
     .section {
-        height: auto !important;
+        height: auto;
         margin-bottom: 100px;
-
+    }
+    .container {
+        height: auto;
     }
 
-     .section:nth-child(2) div.fp-tableCell,
-     .section:nth-child(3) div.fp-tableCell,
-     .section:nth-child(4) div.fp-tableCell {
-         height: auto !important;
-     }
-
-     .section:last-child .container_wrapper {
-         height: auto !important;
-     }
-
-     .section:last-child {
+     #sec4 {
          margin: 0;
-     }
-
-     .container {
-         height: auto;
      }
 
      .container-left, .container-right {
@@ -1258,8 +1252,8 @@ footer div{
     .photo-one,.photo-tree,.photo-four{
         display: none;
     }
-    .gallery-header{
-        width: 100%;
+    .main-content img{
+        max-width: 100%;
     }
     .container-left,.container-right{
         width: 95%;
@@ -1294,6 +1288,7 @@ footer div{
     .contact_form label,
     .contact_form button{
         width: 100%;
+        height:30px;
         font-size:14px;
         margin-bottom: 20px;
     }
@@ -1302,6 +1297,7 @@ footer div{
     }
     .oder-goods{
         width: 80%;
+        top:5%;
         left: 10%;
         right: 10%;
     }
