@@ -24,7 +24,7 @@ a{
 }
 html,body{
     width: 100%;
-    height: auto;
+    min-height:100%;
 }
 
                   /*header*/
@@ -275,6 +275,7 @@ footer div{
     text-align: center;
     overflow: hidden;
     color: #b4b4b4;
+    align-self: center;
 }
 .contact{
     font-size: 1em;
@@ -441,9 +442,20 @@ footer div{
 
     /*about page*/
 
+
+.content-wrapper{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.content-about footer{
+    margin-top: 100px;
+}
 .content-about{
     display: flex;
     align-items: flex-start;
+    position: relative;
 }
 
 .text-block h1, .text-block h2, .text-block p {
@@ -466,6 +478,7 @@ footer div{
      text-align: justify;
      font-size: 20px;
 }
+
 
 
 
